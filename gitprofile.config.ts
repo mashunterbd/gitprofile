@@ -2,229 +2,192 @@
 
 const CONFIG = {
   github: {
-    username: 'arifszn', // Your GitHub org/user name. (This is the only required config)
+    username: 'mashunterbd', // GitHub username
   },
-  /**
-   * If you are deploying to https://<USERNAME>.github.io/, for example your repository is at https://github.com/arifszn/arifszn.github.io, set base to '/'.
-   * If you are deploying to https://<USERNAME>.github.io/<REPO_NAME>/,
-   * for example your repository is at https://github.com/arifszn/portfolio, then set base to '/portfolio/'.
-   */
-  base: '/gitprofile/',
+  base: '/mashunter/',
   projects: {
     github: {
-      display: true, // Display GitHub projects?
+      display: true,
       header: 'Github Projects',
-      mode: 'automatic', // Mode can be: 'automatic' or 'manual'
+      mode: 'automatic',
       automatic: {
-        sortBy: 'stars', // Sort projects by 'stars' or 'updated'
-        limit: 8, // How many projects to display.
+        sortBy: 'stars',
+        limit: 8,
         exclude: {
-          forks: false, // Forked projects will not be displayed if set to true.
-          projects: [], // These projects will not be displayed. example: ['arifszn/my-project1', 'arifszn/my-project2']
+          forks: false,
+          projects: [],
         },
       },
       manual: {
-        // Properties for manually specifying projects
-        projects: ['arifszn/gitprofile', 'arifszn/pandora'], // List of repository names to display. example: ['arifszn/my-project1', 'arifszn/my-project2']
+        projects: [],
       },
     },
     external: {
       header: 'My Projects',
-      // To hide the `External Projects` section, keep it empty.
       projects: [
         {
-          title: 'Project Name',
+          title: 'Helpful Video Content',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'I have a YouTube channel through which I create content and distribute it to everyone so that everyone can benefit from it.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://raw.githubusercontent.com/mashunterbd/mashunter/main/image/Picsart_24-03-06_16-17-15-331.jpg',
+          link: 'https://www.youtube.com/@mashunter',
         },
         {
-          title: 'Project Name',
+          title: 'Problem Solving Community',
           description:
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+            'Many problems related to Android, Linux, and Windows are constantly encountered by our community with some solutions and updated over time.',
           imageUrl:
-            'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-          link: 'https://example.com',
+            'https://raw.githubusercontent.com/mashunterbd/mashunter/main/image/Picsart_24-03-06_16-20-26-775.jpg',
+          link: 'https://mashunterbd.github.io/mashunter',
         },
       ],
     },
   },
-  seo: { title: 'Portfolio of Ariful Alam', description: '', imageURL: '' },
+  seo: { 
+    title: 'Portfolio of MD. Abu Bakar Siddik', 
+    description: 'Ethical Hacker | Cyber Security | Content Creator | Journalist | SEO Specialist', 
+    imageURL: 'https://raw.githubusercontent.com/mashunterbd/mashunter/main/image/Picsart_24-03-06_16-17-15-331.jpg' 
+  },
   social: {
-    linkedin: 'ariful-alam',
-    x: 'arif_szn',
-    mastodon: 'arifszn@mastodon.social',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', // example: 'pewdiepie'
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'arifszn',
-    dev: 'arifszn',
-    stackoverflow: '', // example: '1/jeff-atwood'
-    discord: '',
-    telegram: '',
-    website: 'https://www.arifszn.com',
-    phone: '',
-    email: 'arifulalamszn@gmail.com',
+    linkedin: 'mashunter',
+    x: 'mashunterofficial',
+    facebook: 'mashunterofficial',
+    instagram: 'mashunterofficial',
+    youtube: 'mashunterofficial',
+    medium: 'mashunter',
+    dev: '',
+    stackoverflow: '',
+    telegram: 'mashunterofficial',
+    website: 'https://mashunterbd.github.io/mashunter',
+    email: 'pentester.mas@gmail.com',
+    phone: '+8801875489971',
+    tiktok: 'mashunteroffical',
+    tryhackme: 'mashunter',
   },
   resume: {
-    fileUrl:
-      'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', // Empty fileUrl will hide the `Download Resume` button.
+    fileUrl: 'https://drive.google.com/file/d/1zrWA5V43GUe_gKSDo3fcmOnSmQe_DyIW/view?usp=drivesdk', // তুমি চাইলে রেজিউম PDF লিংক বসাতে পারো
   },
   skills: [
-    'PHP',
-    'Laravel',
-    'JavaScript',
-    'React.js',
-    'Node.js',
-    'Nest.js',
-    'MySQL',
-    'PostgreSQL',
-    'Git',
-    'Docker',
-    'PHPUnit',
-    'CSS',
-    'Antd',
-    'Tailwind',
+    'Ethical Hacking',
+    'Penetration Testing',
+    'Linux',
+    'Python',
+    'Bash',
+    'Networking',
+    'Metasploit',
+    'Nessus',
+    'SQL Injection',
+    'XSS',
+    'Video Editing',
+    'SEO',
+    'Content Creation',
+    'Digital Marketing',
   ],
   experiences: [
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'September 2021',
-      to: 'Present',
-      companyLink: 'https://example.com',
+      company: 'Byte Capsule',
+      position: 'Cybersecurity Intern',
+      from: 'February 2024',
+      to: 'May 2024',
+      companyLink: '',
     },
     {
-      company: 'Company Name',
-      position: 'Position',
-      from: 'July 2019',
-      to: 'August 2021',
-      companyLink: 'https://example.com',
+      company: 'Team Matrix',
+      position: 'Ethical Hacker',
+      from: '2022',
+      to: '2023',
+      companyLink: '',
+    },
+    {
+      company: 'Freelance',
+      position: 'Video Editor & Content Creator',
+      from: '2020',
+      to: 'Present',
+      companyLink: '',
+    },
+    {
+      company: 'VOD Bangla',
+      position: 'Journalist',
+      from: 'May 2025',
+      to: 'August 2025',
+      companyLink: 'https://www.facebook.com/vodbangla',
+    },
+    {
+      company: 'VOD Bangla',
+      position: 'SEO Specialist',
+      from: 'August 2025',
+      to: 'Present',
+      companyLink: 'https://www.facebook.com/vodbangla',
     },
   ],
   certifications: [
     {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com',
+      name: 'CERTIFIED ETHICAL HACKER',
+      body: 'Team Matrix - Elite Hacker',
+      year: '30 August 2023',
+      link: 'https://drive.google.com/file/d/1b5ehHZJfdEkXbrUvPZSZnglkRsELpjhi/view',
+    },
+    {
+      name: 'Cyber Security Fundamentals',
+      body: 'Udemy',
+      year: '8 March 2024',
+      link: 'https://drive.google.com/file/d/1-c8TeSq4gVPIeyARMXe7Z1esQi-yyDDB/view',
+    },
+    {
+      name: 'Ethical Hacking for Professionals',
+      body: 'Byte Capsule',
+      year: '20 February 2024',
+      link: 'https://drive.google.com/file/d/1w9CgoVDU3VF4jQEjVFQJdRlbPCOHsfJg/view',
+    },
+    {
+      name: 'Linux 100: Fundamentals',
+      body: 'TCM SECURITY',
+      year: '6 October 2024',
+      link: 'https://drive.google.com/file/d/14lrswARptGnZyhZXQ89kVDmkSKJ5rm6l/view',
+    },
+    {
+      name: 'Digital Marketing',
+      body: 'Dreamland IT Institute',
+      year: '20 April 2025',
+      link: '',
     },
   ],
   educations: [
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2015',
-      to: '2019',
+      institution: 'Diploma in Computer Science and Engineering (CSE)',
+      degree: 'Running',
+      from: '2021',
+      to: 'Present',
     },
     {
-      institution: 'Institution Name',
-      degree: 'Degree',
-      from: '2012',
-      to: '2014',
+      institution: 'Secondary School Certificate (Science)',
+      degree: 'SSC',
+      from: '2019',
+      to: '2020',
     },
   ],
-  publications: [
-    {
-      title: 'Publication Title',
-      conferenceName: '',
-      journalName: 'Journal Name',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-    {
-      title: 'Publication Title',
-      conferenceName: 'Conference Name',
-      journalName: '',
-      authors: 'John Doe, Jane Smith',
-      link: 'https://example.com',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    },
-  ],
-  // Display articles from your medium or dev account. (Optional)
   blog: {
-    source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many articles to display. Max is 10.
+    source: 'medium',
+    username: 'mashunter',
+    limit: 2,
   },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
-  // Track visitor interaction and behavior. https://www.hotjar.com
+  googleAnalytics: { id: '' },
   hotjar: { id: '', snippetVersion: 6 },
   themeConfig: {
     defaultTheme: 'lofi',
-
-    // Hides the switch in the navbar
-    // Useful if you want to support a single color mode
     disableSwitch: false,
-
-    // Should use the prefers-color-scheme media-query,
-    // using user system preferences, instead of the hardcoded defaultTheme
     respectPrefersColorScheme: false,
-
-    // Display the ring in Profile picture
     displayAvatarRing: true,
-
-    // Available themes. To remove any theme, exclude from here.
     themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'dim',
-      'nord',
-      'sunset',
-      'caramellatte',
-      'abyss',
-      'silk',
-      'procyon',
+      'light','dark','lofi','dracula','night','coffee','winter','cyberpunk','dim','luxury'
     ],
   },
-
-  // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
-
+  footer: `${new Date().toLocaleDateString('en-GB', { 
+      day: '2-digit', 
+      month: 'long', 
+      year: 'numeric' 
+  })}`,
   enablePWA: true,
 };
 
